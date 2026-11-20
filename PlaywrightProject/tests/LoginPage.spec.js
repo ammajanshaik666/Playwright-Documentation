@@ -3,9 +3,9 @@
 import { test } from '@playwright/test';
 import { LoginPage } from '../pages/loginPage';
 
-test.describe('Login Tests', () => {
+//test.describe('Login Tests', () => {
 
-    test('Valid Login @DXP-123', async ({ page }) => {
+    test('Valid Login', async ({ page }) => {
 
         const loginPage = new LoginPage(page);
 
@@ -19,4 +19,4 @@ test.describe('Login Tests', () => {
         await loginPage.verifyLoginSuccess();
     });
 
-});
+//});

@@ -5,9 +5,11 @@
     "html-to-text": "^10.0.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6"
   },
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "report": "playwright show-report --port 3000"
   }
 }
